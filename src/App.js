@@ -8,11 +8,13 @@ export default function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="" element={<Landing />} />
-        <Route path="*" element={<Navigate to="/" replace={true} />} />
-      </Routes>
-      <Footer />
+      <div className="main">
+        <Routes>
+          <Route path="" element={<Landing />} />
+          <Route path="*" element={<Navigate to="/" replace={true} />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 }
