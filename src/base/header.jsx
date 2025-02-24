@@ -54,7 +54,7 @@ export default function Header() {
     window.addEventListener("scroll", windowScroll);
     return () => window.removeEventListener("scroll", windowScroll);
   }, []);
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const closeFunc = (e) => {
     if (e.currentTarget === e.target) setModal(false);
   };
