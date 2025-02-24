@@ -30,9 +30,14 @@ export default function Modal({ closeFunc }) {
           May 21st - up to 15,000 selected users <br />
           <span>Full release on June 8th</span>
         </p>
-        <button type="button" className="button primary" onClick={closeFunc}>
+        <a
+          href="https://forms.gle/W9iF8W7V1ebBAGTR9"
+          target="_blank"
+          className="button primary"
+          onClick={closeFunc}
+        >
           Join Waitlist
-        </button>
+        </a>
       </div>
     </motion.div>,
     document.getElementById("popups")
